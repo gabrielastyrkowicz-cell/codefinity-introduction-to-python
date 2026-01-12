@@ -1,10 +1,12 @@
 grocery_items = "milk cheese bread apples oranges chicken"
 
-# Concatenating strings
-part1 = "Straw"
-part2 = "berry"
-new_word = part1 + part2  # "Strawberry"
-print("Concatenated word:", new_word)
+dairy1 = grocery_items[0:4]
+dairy2 = grocery_items[5:11]
+bakery1 = grocery_items[12:17]
+fruit1 = grocery_items[18:24]
+fruit2 = grocery_items[25:32]
+meat1 = grocery_items[-7:]
+aisle = "5"
 
-# If you want to separate the words with a space, you need to add " " between the two parts
-print("Word with spaces:", part1 + " " + part2)  # "Straw berry"
+message = "We have items:" + " " + dairy1 + ", " + dairy2  + ", " +  bakery1 + ", " + fruit1 + ", " + fruit2 + ", " + meat1 + " in aisle " + aisle + "."
+print(message)
